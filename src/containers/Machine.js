@@ -6,17 +6,17 @@ const Machine = ()=>{
     const [data,setData]= useState(BankTwo);
 
     const SoundKey = (e)=>{
-        const filtro= data.find(el=> el.keyCode== e.which)
+        const filtro= data.find(el=> el.keyCode=== e.which)
         console.log(filtro.url);
         play(filtro.url)
         
     }
 
     const Cambiar = ()=>{
-        if(data == BankOne){
+        if(data === BankOne){
             setData(BankTwo)
         }
-        if(data== BankTwo){
+        if(data=== BankTwo){
             setData(BankOne)
         }
     }
