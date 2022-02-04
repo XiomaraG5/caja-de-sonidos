@@ -23,7 +23,7 @@ const Machine = ()=>{
     
     return(
         <div onKeyDown={SoundKey}>
-            <div id='drum-machine'> Hola mundo</div>
+            <div id="drum-machine" > Hola mundo</div>
             <Teclado teclas={data} />
             <div id="display">
                 <button onClick={Cambiar}>Bank</button>
