@@ -14,10 +14,12 @@ const Teclado = ({teclas})=>{
         teclas.map(tecla => (
             <button key={tecla.id}
             className='drum-pad'
-            id={tecla.keyTrigger} 
+             
             onClick={()=>play(tecla.url)}>
                 <audio src={tecla.url}
-                    className='clip'>
+                    className='clip'
+                    id={tecla.keyTrigger}>
+                        
                 </audio>
                  {tecla.keyTrigger}
             </button>
