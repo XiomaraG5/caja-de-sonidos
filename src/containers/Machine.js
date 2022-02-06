@@ -33,12 +33,14 @@ const Machine = ()=>{
     
     return(
         <div id="drum-machine">
-            <div  > Hola mundo</div>
+            <h1  > Caja de sonidos</h1>
             <Teclado teclas={data} />
-            <div id="display">
-                <button onClick={Cambiar}>Bank</button>
+            <div className='info'>
+                <button className='Btninfo'
+                 onClick={Cambiar}>Bank</button>
+                <div id='display'></div>
             </div>
-            <div id='display'></div>
+            
         </div>
     )
 }

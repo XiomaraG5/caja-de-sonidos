@@ -18,7 +18,7 @@ const Teclado = ({teclas})=>{
  }, []);
  
     return (
-    <div>
+    <div className='contenedorBotones'>
         {
         teclas.map(tecla => (
             
